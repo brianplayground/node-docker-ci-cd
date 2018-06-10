@@ -1,4 +1,9 @@
 version: 1
+deployment:
+  dockerhub:
+    branch: master
+    commands:
+      - $DOCKER_HUB_TRIGGER
 test:
   override:    
     - mocha
